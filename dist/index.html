@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8f9f6" />
+    <meta name="description" content="A little space to work things out. A fast, private, temporary spreadsheet. Open, calculate, copy, close." />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <title>TempSheet — A little space to work things out.</title>
+    <script>
+      try { const saved = localStorage.getItem('tempsheet-theme'); document.documentElement.dataset.theme = saved === 'light' || saved === 'dark' ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch { document.documentElement.dataset.theme = 'light'; }
+      document.querySelector('meta[name="theme-color"]').content = document.documentElement.dataset.theme === 'dark' ? '#151b19' : '#f8f9f6';
+    </script>
+    <script type="module" crossorigin src="./assets/index-D2kYn0l8.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Cm7LGHG0.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
