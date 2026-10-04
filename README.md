@@ -2,6 +2,8 @@
 
 Lekki arkusz do szybkich obliczeń w przeglądarce. Obsługuje formuły, formatowanie, sortowanie, wyszukiwanie oraz eksport CSV i XLSX.
 
+Menu Sort pozwala automatycznie rozpoznać nagłówki, zachować pierwszy wiersz sortowanego zakresu lub posortować go razem z pozostałymi. Ustawienie działa również przy sortowaniu z menu pod prawym przyciskiem myszy.
+
 **Uruchom aplikację: https://apkmasondev.github.io/tempsheet/**
 
 Dane arkusza pozostają w pamięci karty przeglądarki. Aplikacja nie wysyła ich na serwer i nie zapisuje automatycznie. Aby zachować pracę, pobierz edytowalny plik TempSheet przez menu Export lub skrótem Ctrl/⌘ + S. Lokalnie zapamiętywany jest wyłącznie wybór motywu.
