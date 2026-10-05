@@ -8,11 +8,13 @@ Menu Sort pozwala automatycznie rozpoznać nagłówki, zachować pierwszy wiersz
 
 Dane arkusza pozostają w pamięci karty przeglądarki. Aplikacja nie wysyła ich na serwer i nie zapisuje automatycznie. Aby zachować pracę, pobierz edytowalny plik TempSheet przez menu Export lub skrótem Ctrl/⌘ + S. Lokalnie zapamiętywany jest wyłącznie wybór motywu.
 
-Menu Export oferuje dwa warianty XLSX: „Download XLSX” zapisuje wyniki, a „Download XLSX with formulas” zachowuje formuły do dalszej pracy w Excelu. Oba warianty zachowują formatowanie i szerokości kolumn. Plik z formułami zawiera aktualne wyniki oraz włączone przeliczanie przy otwarciu; nieobsługiwana formuła jest zgłaszana z adresem komórki. TempSheet nie importuje jeszcze XLSX — do ponownego otwarcia arkusza tutaj służy plik `.tempsheet.json`.
+Menu Export oferuje dwa warianty XLSX: „Download XLSX” zapisuje wyniki, a „Download XLSX with formulas” zachowuje formuły do dalszej pracy w Excelu. Oba warianty zachowują formatowanie i szerokości kolumn. Plik z formułami zawiera aktualne wyniki oraz włączone przeliczanie przy otwarciu; nieobsługiwana formuła jest zgłaszana z adresem komórki. Pliki XLSX można otworzyć przez More → Open sheet / XLSX / CSV: pierwszy arkusz zastępuje bieżący (z możliwością cofnięcia), z wartościami, formatami liczb i szerokościami kolumn. Formuły pozostają aktywne, gdy TempSheet je obsługuje i oblicza ten sam wynik co Excel; pozostałe zachowują ostatni wynik z Excela. Bezstratnym sposobem kontynuowania pracy pozostaje plik `.tempsheet.json`.
+
+Pierwszy wiersz można przypiąć (More → Freeze first row), długi tekst wychodzi na puste komórki obok, a Ctrl/⌘ + Enter wpisuje wartość lub formułę do całego zaznaczenia.
 
 ## Zawartość repozytorium
 
-- `dist/` — gotowe pliki produkcyjne aplikacji, w tym biblioteka eksportu XLSX ładowana na żądanie.
+- `dist/` — gotowe pliki produkcyjne aplikacji, w tym moduły eksportu i importu XLSX ładowane na żądanie.
 - `.github/workflows/deploy.yml` — publikacja katalogu `dist/` przez GitHub Pages.
 - `README.md` — opis aplikacji i sposobu publikacji.
 
